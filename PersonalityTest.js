@@ -197,7 +197,7 @@ class PersonalTest {
             const resultInforElement = this.container.querySelector('.result_infor');
             const calcResult = this.calcResult();
         
-            resultTextElement.innerHTML = `당신의 성향은 <span class="point_text">${calcResult}</span>입니다.`;
+            resultTextElement.innerHTML = `Your Cat type is <span class="point_text">${calcResult}</span>.`;
             resultInforTitleElement.innerHTML = `[ ${this.resultInfors[calcResult].title} ]`;
         
             resultInforElement.innerHTML = this.resultInfors[calcResult].desc

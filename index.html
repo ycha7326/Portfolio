@@ -1,10 +1,46 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-    </head>
-    <body>
-      <h1>
-        Yoonhee and Chloe's Webpage
-      </h1>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta 
+        name="description" 
+        content="Catology"
+    />
+    <meta name="og:image" content="images/op_image.png" />
+    <title>Catology</title>
+    <script src="PersonalityTest.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <div class="PersonalityTest_container">
+        <div class="intro_container content_container">
+            <img src="images/main.jpg" alt="">
+            <h1>Find out <span class="point_text">which cat type you are!</span></h1>
+            <button class="start" type="button" data-action="start">Start</button>
+        </div>
+        <div class="test_container content_container">
+            <h2>
+                <span class="progress point_text">0</span>
+                <span class="question">Question</span>
+            </h2>
+            <div class="answer_container">
+                <button class="answer" type="button" data-answer="a">Answer A</button>
+                <button class="answer" type="button" data-answer="b">Answer B</button>
+            </div>
+        </div>
+        <div class="result_container content_container">
+            <h2 class="result_text">Your cat type is OOO.</h2>
+            <h3 class="result_infor_title"></h3>
+            <ul class="result_infor"></ul>
+            <button class="restart" type="button" data-action="restart">Redo</button>
+        </div>
+    </div>
+
+    <script>
+        const PersonalityTest = new PersonalTest('.PersonalityTest_container');
+    </script>
+</body>
 </html>
